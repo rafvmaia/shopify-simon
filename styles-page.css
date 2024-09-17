@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Container do formulário */
+.contact-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Estilo dos inputs */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Botão de envio */
+.contact-form button {
+  background-color: #0470a4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #004d66;
+}
+
+.banner_contact {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  margin-bottom: -30px;
+}
+
+.banner_contact img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .page-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Estilo do container do e-mail */
+.email-container {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Estilo do ícone de e-mail */
+.email-container img {
+  width: 15%;
+  margin-right: 10px;
+}
+
+/* Estilo do texto */
+.email-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-text a {
+  text-decoration: none;
+  color: #0470a4;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Poppins";
+}
+
+.email-text > span {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Poppins";
+}
+
+.email-text a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 600px) {
+  .email-container {
+    padding: 8px 15px;
+  }
+
+  .email-container img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .email-text a {
+    font-size: 14px;
+  }
+}
+
+/* Formulario de contato*/
+.container__contact {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 30px;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.container__contact .container-inner {
+  width: 100%;
+  max-width: 1200px; /* Define a largura máxima para o conteúdo */
+  display: flex;
+  justify-content: space-between; /* Espaça as colunas igualmente */
+}
+
+/* Ajustes para as colunas */
+.container__contact .colunm1,
+.container__contact .colunm2 {
+  width: 48%; /* Ajuste a largura das colunas */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente dentro das colunas */
+}
+
+.container__contact .colunm1 {
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.container__contact .colunm1 h1 {
+  color: black;
+  font-size: 40px;
+  font-family: "Poppins";
+  font-weight: 700;
+  word-wrap: break-word;
+  padding-bottom: 30px;
+}
+
+.container__contact .colunm1 p {
+  color: black;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 400;
+  word-wrap: break-word;
+  line-height: 30px;
+  width: 85%;
+  padding-bottom: 30px;
+}
+
+.container__contact .colunm1 .icon_form img {
+  width: 30px;
+}
+
+.container__contact .colunm2 {
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.container__contact .colunm2 .cta-button h1 {
+  color: black;
+  font-size: 40px;
+  font-family: "Poppins";
+  font-weight: 700;
+  word-wrap: break-word;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.container__contact .colunm2 > .icon-rr img {
+  width: 40%;
+}
+
+.container__contact .colunm2 label {
+  color: black;
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 700;
+  display: block;
+  width: 100%;
+}
+
+.container__contact .colunm2 form {
+  width: 100%;
+}
+
+.container__contact .colunm2 input {
+  width: 90%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #e9e8e8;
+  background-color: #fff;
+  margin: 10px 0px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.container__contact .colunm2 textarea {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e9e8e8;
+  background-color: #fff;
+  margin: 10px 0px;
+  min-height: 150px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.cta-button img {
+  width: 60px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.container__contact .colunm2 .button__form {
+  width: 30%;
+  background-color: #0470a4;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.container__contact .colunm2 .button__form:hover {
+  background-color: #24a9ec;
+}
+
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+  .container__contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .container__contact .container-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__contact .colunm1,
+  .container__contact .colunm2 {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .container__contact .colunm2 .cta-button {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .container__contact .colunm2 .cta-button h1 {
+    font-size: 30px;
+  }
+
+  .container__contact .colunm2 > .icon-rr img {
+    width: 80%;
+  }
+}
