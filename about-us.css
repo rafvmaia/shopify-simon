@@ -253,6 +253,7 @@ header .container .slideshow {
   align-items: center;
   width: 100%;
   padding: 0 15px; /* Pequeno padding para espaçamento nas laterais */
+  margin-bottom: 50px;
 }
 
 .colections-about > .inner {
@@ -322,9 +323,11 @@ header .container .slideshow {
 }
 .faq-image img {
   width: 100%;
+  padding-right: 30px;
 }
 .faq-col2 {
   width: 100%;
+  gap: 30px;
 }
 
 .faq-item {
