@@ -99,7 +99,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
   .h1-faq {
     font-family: var(--font-family-base);
     font-size: 30px;
