@@ -1,8 +1,8 @@
 @media (max-width: 600px) {
-  header .container .slideshow {
+  header .container-geral .slideshow {
     max-width: 100%;
   }
-  header .container .slideshow img {
+  header .container-geral .slideshow img {
     width: 100%;
   }
   .about-us {
@@ -98,5 +98,3 @@
     text-align: left;
   }
 }
-
-
