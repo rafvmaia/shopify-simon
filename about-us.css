@@ -154,6 +154,7 @@ header .container {
   max-width: 1200px;
   width: 100%; /* Permitir que ele use 100% da largura da tela disponível */
   overflow: hidden;
+  flex-wrap: wrap;
 }
 
 header .container .slideshow {
