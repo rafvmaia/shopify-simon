@@ -151,7 +151,6 @@ header .container {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   width: 100%; /* Permitir que ele use 100% da largura da tela disponível */
   overflow: hidden;
   flex-wrap: wrap;
@@ -252,7 +251,6 @@ header .container .slideshow {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   width: 100%;
   padding: 0 15px; /* Pequeno padding para espaçamento nas laterais */
 }
