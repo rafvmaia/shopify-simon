@@ -110,4 +110,46 @@
           }
     }
 
+    @media (min-width: 1440px) {
+        .about-us .container-inner {
+          flex-direction: row;
+          justify-content: space-around; /* Distribui melhor o conteúdo */
+        }
+      
+        .faq-section {
+          padding: 80px; /* Aumenta o espaçamento em telas grandes */
+        }
+      
+        .colections-about > .h1-coletions {
+          font-size: 4rem; /* Fonte maior em telas grandes */
+        }
+      }
+
+      /* Ajuste para telas maiores */
+@media (min-width: 1440px) {
+    .colections-about > .inner {
+      grid-template-columns: repeat(3, 1fr); /* Mantém 3 colunas em telas grandes */
+      gap: 30px; /* Aumenta o espaçamento */
+    }
   
+    .faq-all {
+      grid-template-columns: repeat(2, 1fr); /* Mantém duas colunas para FAQ */
+    }
+  }
+  
+  /* Para telas muito pequenas, ajuste o layout */
+  @media (max-width: 768px) {
+    .about-us .container-inner {
+      flex-direction: column; /* Stack vertical em telas pequenas */
+    }
+  
+    .colections-about > .inner {
+      grid-template-columns: 1fr; /* Uma coluna só em telas pequenas */
+    }
+  
+    .faq-all {
+      grid-template-columns: 1fr; /* Uma coluna só no FAQ */
+    }
+  }
+  
+      

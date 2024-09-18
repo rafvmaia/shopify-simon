@@ -152,7 +152,7 @@ header .container {
   justify-content: center;
   align-items: center;
   max-width: 1200px;
-  width: 100%;
+  width: 100%; /* Permitir que ele use 100% da largura da tela disponível */
   overflow: hidden;
 }
 
@@ -177,7 +177,7 @@ header .container .slideshow {
 
 .about-us .container-inner {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px; /* Largura máxima definida */
   display: flex;
   justify-content: space-between;
   align-items: center;
