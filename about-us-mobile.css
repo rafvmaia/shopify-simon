@@ -125,30 +125,43 @@
         }
       }
 
-      /* Ajuste para telas maiores */
-@media (min-width: 1440px) {
-    .colections-about > .inner {
-      grid-template-columns: repeat(3, 1fr); /* Mantém 3 colunas em telas grandes */
-      gap: 30px; /* Aumenta o espaçamento */
+      /* Adicionar ajustes para telas maiores que 1200px */
+@media (min-width: 1200px) {
+    .container-inner {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
     }
   
+    .about-us .col1,
+    .about-us .col2 {
+      width: 50%; /* Ajusta as colunas para serem proporcionais */
+      padding: 20px;
+    }
+  
+    /* Aumentar o tamanho das fontes para telas grandes */
+    .about-us .col1 h1 {
+      font-size: 3.5rem; /* Aumentar o tamanho do título */
+    }
+  
+    .about-us .col1 p {
+      font-size: 1.25rem; /* Aumentar o tamanho do texto */
+    }
+  
+    .faq-section {
+      width: 90%;
+      padding: 60px 0;
+    }
+  
+    /* Ajustar o tamanho das imagens nas coleções */
+    .colections-about .inner div img {
+      height: 400px; /* Definir uma altura maior para as imagens */
+    }
+  
+    /* Corrigir alinhamento das perguntas do FAQ */
     .faq-all {
-      grid-template-columns: repeat(2, 1fr); /* Mantém duas colunas para FAQ */
-    }
-  }
-  
-  /* Para telas muito pequenas, ajuste o layout */
-  @media (max-width: 768px) {
-    .about-us .container-inner {
-      flex-direction: column; /* Stack vertical em telas pequenas */
-    }
-  
-    .colections-about > .inner {
-      grid-template-columns: 1fr; /* Uma coluna só em telas pequenas */
-    }
-  
-    .faq-all {
-      grid-template-columns: 1fr; /* Uma coluna só no FAQ */
+      grid-template-columns: 1fr 1fr; /* Garantir que fique lado a lado em telas grandes */
     }
   }
   
