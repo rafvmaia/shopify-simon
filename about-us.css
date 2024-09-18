@@ -170,7 +170,6 @@ header .container .slideshow {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
   background-color: #fff;
   flex-wrap: wrap;
 }
@@ -252,15 +251,19 @@ header .container .slideshow {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0 15px; /* Pequeno padding para espaçamento nas laterais */
-  margin-bottom: 50px;
+  background-image: url('bg-about.jpg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Faz com que a imagem cubra toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  padding: 0; /* Remove qualquer padding para evitar espaços brancos */
+  margin: 0; /* Remove qualquer margin para evitar espaços brancos */
 }
 
 .colections-about > .inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-
+  padding: 0px 0px 50px 0px;
 }
 
 .colections-about > .h1-coletions {
