@@ -133,6 +133,17 @@ table {
 
 /*END Reset*/
 
+:root{
+  --primary-color: #000;
+  --secondary-color: #0470a4;
+  --font-size-large: 3.25rem;
+  --font-size-medium: 2.8rem;
+  --font-size-small: 0.8rem;
+  --font-weight-h1: 700;
+  --font-weight-h5: 600;
+  --font-family-base: "Poppins", sans-serif; 
+  }
+
 /* Start About Us CSS */
 
 header .container {
@@ -160,6 +171,7 @@ header .container .slideshow {
   align-items: center;
   padding: 30px;
   background-color: #fff;
+  flex-wrap: wrap;
 }
 
 .about-us .container-inner {
@@ -230,3 +242,143 @@ header .container .slideshow {
   padding: 20px;
   align-items: flex-start;
 }
+
+/* Colections Section */
+
+.colections-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px; /* Pequeno padding para espaçamento nas laterais */
+}
+
+.colections-about > .inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+
+.colections-about > .h1-coletions {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.25rem;
+  font-weight: 600;
+  padding: 50px;
+  text-align: center;
+}
+
+.inner div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner div img {
+  border-radius: 15px;
+  width: 100%; /* A imagem se ajusta à largura da coluna */
+  height: auto; /* Mantém a proporção correta */
+  object-fit: cover; /* Para garantir que a imagem preencha o espaço sem distorcer */
+  transition: transform 0.3s ease-in-out; /* Suaviza a animação ao passar o mouse */
+}
+
+.inner div:hover img {
+  transform: translateY(-10px); /* Move a imagem 10px para cima */
+}
+
+/* FAQ */
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.h1-faq{
+  font-family:var(--font-family-base);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-h1);
+  padding-bottom: 50px;
+}
+.subtitle{
+  font-family:var(--font-family-base);
+  font-size: var(--font-size-small);
+  color: var(--secondary-color);
+  font-weight: var(--font-weight-h5);
+  padding-bottom: 10px;
+}
+.faq-all{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+}
+.faq-image img{
+  width: 100%;
+}
+.faq-col2{
+
+  width: 100%;
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background-color: #f7f7f7;
+  border: none;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.faq-icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #000;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 100;
+  margin-right: 15px;
+}
+
+.faq-answer {
+  padding: 15px;
+  display: none;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.faq-answer p {
+  margin: 0;
+}
+
+/* Quando o item está aberto */
+[aria-expanded="true"] .faq-icon {
+  background-color: #0470a4;
+}
+
+
