@@ -1,168 +1,113 @@
 @media (max-width: 600px) {
-        header .container .slideshow{
-        max-width: 100%;
-        }
-        header .container .slideshow img{
-            width: 100%;
-        }
-        .about-us{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 15px;
-        }
-        .about-us > .container-inner{
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
-            justify-items: center;
-            width: 100%;
-            padding: 0px;
-        }
-        .container-inner .col1{
-            width: 100%;
-            padding: 15px;
-        }
-        .container-inner .col2{
-            width: 100%;
-            padding: 15px;
-        }
-        .container-inner .col2 .tshirt-banner{
-            width: 100%;
-        }
-        .about-us .col1 h5{
-            padding: 0px 0px 5px 0px;
-            text-align: center;
-            width: 100%;
-        }
-        .about-us .col1 h1{
-            padding: 10px 0px 20px 0px;
-            width: 100%;
-            text-align: center;
-            font-size: 2.5rem;
-        }
-        .about-us .col1 p{
-            padding: 0px 5px 30px 5px;
-            width: 100%;
-            line-height: 35px;
-        }
-
-        .colections-about > .inner {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 15px;
-            width: 100%;
-          }
-
-          .colections-about > .h1-coletions {
-            font-family: "Poppins", sans-serif;
-            font-size: 2.125rem;
-            font-weight: 600;
-            padding: 50px;
-            text-align: center;
-          }
-
-          .faq-section > .faq-all{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            width: 100%;
-            padding: 0;
-          }
-          .faq-image img{
-            width: 250px;
-          }
-
-          .faq-col2{
-            width: 100%;
-          }
-
-          .h1-faq{
-            font-family:var(--font-family-base);
-            font-size: 30px;
-            font-weight: var(--font-weight-h1);
-            padding-bottom: 30px;
-            text-align: center;
-          }
-          .subtitle{
-            text-align: center;
-            padding-top: 30px;
-          }
-
-    }
-
-    @media (min-width: 834px) {
-        .h1-faq{
-            font-family:var(--font-family-base);
-            font-size: 30px;
-            font-weight: var(--font-weight-h1);
-            padding-bottom: 30px;
-            text-align: left;
-          }
-    }
-
-    @media (min-width: 1280px) {
-        .h1-faq{
-            font-family:var(--font-family-base);
-            font-size: var(--font-size-medium);
-            font-weight: var(--font-weight-h1);
-            padding-bottom: 30px;
-            text-align: left;
-          }
-    }
-
-    @media (min-width: 1440px) {
-        .about-us .container-inner {
-          flex-direction: row;
-          justify-content: space-around; /* Distribui melhor o conteúdo */
-        }
-      
-        .faq-section {
-          padding: 80px; /* Aumenta o espaçamento em telas grandes */
-        }
-      
-        .colections-about > .h1-coletions {
-          font-size: 4rem; /* Fonte maior em telas grandes */
-        }
-      }
-
-      /* Adicionar ajustes para telas maiores que 1200px */
-@media (min-width: 1200px) {
-    .container-inner {
-      width: 90%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .about-us .col1,
-    .about-us .col2 {
-      width: 50%; /* Ajusta as colunas para serem proporcionais */
-      padding: 20px;
-    }
-  
-    /* Aumentar o tamanho das fontes para telas grandes */
-    .about-us .col1 h1 {
-      font-size: 3.5rem; /* Aumentar o tamanho do título */
-    }
-  
-    .about-us .col1 p {
-      font-size: 1.25rem; /* Aumentar o tamanho do texto */
-    }
-  
-    .faq-section {
-      width: 90%;
-      padding: 60px 0;
-    }
-  
-    /* Ajustar o tamanho das imagens nas coleções */
-    .colections-about .inner div img {
-      height: 400px; /* Definir uma altura maior para as imagens */
-    }
-  
-    /* Corrigir alinhamento das perguntas do FAQ */
-    .faq-all {
-      grid-template-columns: 1fr 1fr; /* Garantir que fique lado a lado em telas grandes */
-    }
+  header .container .slideshow {
+    max-width: 100%;
   }
-  
-      
+  header .container .slideshow img {
+    width: 100%;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  .about-us > .container-inner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    padding: 0px;
+  }
+  .container-inner .col1 {
+    width: 100%;
+    padding: 15px;
+  }
+  .container-inner .col2 {
+    width: 100%;
+    padding: 15px;
+  }
+  .container-inner .col2 .tshirt-banner {
+    width: 100%;
+  }
+  .about-us .col1 h5 {
+    padding: 0px 0px 5px 0px;
+    text-align: center;
+    width: 100%;
+  }
+  .about-us .col1 h1 {
+    padding: 10px 0px 20px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .about-us .col1 p {
+    padding: 0px 5px 30px 5px;
+    width: 100%;
+    line-height: 35px;
+  }
+
+  .colections-about > .inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    width: 100%;
+  }
+
+  .colections-about > .h1-coletions {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.125rem;
+    font-weight: 600;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .faq-section > .faq-all {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    padding: 0;
+  }
+  .faq-image img {
+    width: 250px;
+  }
+
+  .faq-col2 {
+    width: 100%;
+  }
+
+  .h1-faq {
+    font-family: var(--font-family-base);
+    font-size: 30px;
+    font-weight: var(--font-weight-h1);
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 834px) {
+  .h1-faq {
+    font-family: var(--font-family-base);
+    font-size: 30px;
+    font-weight: var(--font-weight-h1);
+    padding-bottom: 30px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1280px) {
+  .h1-faq {
+    font-family: var(--font-family-base);
+    font-size: 30px;
+    font-weight: var(--font-weight-h1);
+    padding-bottom: 30px;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
