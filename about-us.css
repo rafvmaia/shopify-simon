@@ -259,7 +259,7 @@ header .container .slideshow {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  width: 100%;
+
 }
 
 .colections-about > .h1-coletions {
